@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style3.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+p.solid {
+  border-style: solid;
+  width: 430px;
+  height: 450px;
+
+}
+</style>
+
+</head>
+<body bgcolor="powderblue">
+
+
+
+<a href="profile.html"><img src="img_avatar.png" alt="Avatar" class="avatar" align="right"></a>
+
+
+<div class="row">
+  <div class="column" style="background-color: powderblue;">
+<ul>
+  <li><a class="active" href="wel.html">Home</a></li>
+  <li><a href="steps.html">How to use</a></li>
+  <li><a href="createbill.html">Create bill</a></li>
+  <li><a href="viewbill.html">View all bills</a></li>
+  <li><a href="custom.html">Custom check</a></li>
+  <li><a href="editbill.html">Edit bill</a></li>
+  <li><a href="prodstat.html">Product Statistics</a></li>
+  <li><a href="about.html">About</a></li>
+</ul><br><br><br><br><br><br><br><br><br><br>
+ </div>
+
+
+
+ 
+<div class="column" style="background-color: powderblue;">
+  
+  <h1><b>-----------<u>Custom check</u>-----------</h1></b><br><br> 
+  <div class="boxer">
+  <form action="checkpaid.php" method="post"> 
+      Custom.1 <input type="Submit" name="name_bill" style='width: 270px; height: 30px' value="Click to get all Paid Bills till date"><br><br>
+    </form>
+    <form action="checkunpaid.php" method="post">
+    Custom.2 <input type="Submit" name="name_bill" style='width: 270px; height: 30px' value="Click to get all UnPaid Bills till date"><br><br>
+      </form>
+      <form action="checkdate.php" method="post">
+      Custom.3 <br>
+    From:<label for="birthday"></label>
+  <input type="date"  name="date1"> 
+  till:<label for="birthday"></label>
+  <input type="date"  name="date2">
+  <br>
+    <input type="Submit" name="name_bill" style='width: 270px; height: 30px' value="Click to get all Bills between following date"><br><br>
+  </form>
+  <form action="checkentity.php" method="post">
+  Custom.4 
+  <br>
+  If Entity is greater than or equal to:<input type="text" name="totalentity" style='width: 190px; height: 25px'><br>
+  <input type="Submit" name="name_bill" style='width: 250px; height: 30px' value="Click to get all related Bills"><br><br>
+</form>
+<form action="checkUn.php" method="post">
+  Custom.5 
+  <br>
+  If UnPaid amount is greater than or equal to:<input type="text" name="amtpaid" style='width: 130px; height: 25px'><br>
+  <input type="Submit" name="name_bill" style='width: 250px; height: 30px' value="Click to get all related Bills"><br><br>
+  </form>
+
+
+</div>
+</div>
+</div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id="log"><img src="Log.jpeg" align="right" width="130" height="130" ></div>
+
+
+</body>
+</html>

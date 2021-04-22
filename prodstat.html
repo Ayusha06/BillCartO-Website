@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+.col {
+  font-family:Comic Sans MS;
+}
+
+</style>	
+</head>
+<body bgcolor="powderblue">
+	<div class="row">
+  <div class="column" style="background-color: powderblue;">
+<ul>
+  <li><a class="active" href="wel.html">Home</a></li>
+  <li><a href="steps.html">How to use</a></li>
+  <li><a href="createbill.html">Create bill</a></li>
+  <li><a href="viewbill.html">View all bills</a></li>
+  <li><a href="custom.html">Custom check</a></li>
+  <li><a href="editbill.html">Edit bill</a></li>
+  <li><a href="prodstat.html">Product Statistics</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+ </div>
+ <h2 style="font-family:Malgun Gothic"><b><u>All Products Statistics till date.</h2></u></b><br><br><br>
+ <div class="column" style="background-color: powderblue;">
+ 	<div class="boxer2">
+		<form action="prod1.php" method="post">
+		Entity1:
+		<input type="submit" style='width:180px; height: 20px;' name="name_bill" value="Get Details"><br><br>
+		</form>
+		<form>
+		Entity2:	
+		<input type="submit" style='width:180px; height: 20px;' value="Get Details"><br><br>
+		</form>
+		<form>
+		Entity3:
+		<input type="submit" style='width:180px; height: 20px;' value="Get Details"><br><br>
+		</form>
+		<form>
+		Entity4:
+		
+		<input type="submit" style='width:180px; height: 20px;' value="Get Details">
+		</form>
+	</div>
+</div>
+	</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="log"><img src="Log.jpeg" align="right" width="130" height="130" ></div>
+</body>
+</html>

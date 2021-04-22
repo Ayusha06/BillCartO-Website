@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+.col {
+  font-family:Comic Sans MS;
+}
+
+</style>
+</head>
+<body bgcolor="powderblue">
+	<div class="row">
+  <div class="column" style="background-color: powderblue;">
+<ul>
+  <li><a class="active" href="wel.html">Home</a></li>
+  <li><a href="steps.html">How to use</a></li>
+  <li><a href="createbill.html">Create bill</a></li>
+  <li><a href="viewbill.html">View all bills</a></li>
+  <li><a href="custom.html">Custom check</a></li>
+  <li><a href="editbill.html">Edit bill</a></li>
+  <li><a href="prodstat.html">Product Statistics</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+ </div>
+ <h2 style="font-family:Malgun Gothic"><b><u>Edit previous bills.</h2></u></b><br><br><br>
+ <div class="column" style="background-color: powderblue;">
+ 	<div class="boxer1">
+<form>
+	Enter the Mobile Number entered in the Bill previously<br>
+	Mob Number:<input type='text'  name='number' placeholder="Mob Number" style='width:200px; height: 20px;'><br><br><br>
+	------------------------------------------------------------------------<br><br>
+	Now Enter new payment status for the bill and the paid and unpaid amount<br>
+	Change the payment status:<input type='text'  name='payment' placeholder="Change the payment status" style='width:200px; height: 20px;'><br><br>
+	Paid Amount:<input type='text'  name='paid' placeholder="Paid Amount" style='width:200px; height: 20px;'><br><br>
+	Amount to be paid:<input type='text'  name='unpaid' placeholder="Amountto be paid"	style='width:200px; height: 20px;'><br><br>
+
+		<input type="submit" value="Edit Bill">
+	</div>
+</div>
+</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="log"><img src="Log.jpeg" align="right" width="130" height="130" ></div>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+.col {
+  font-family:Comic Sans MS;
+}
+
+</style>
+</head>
+<body bgcolor="powderblue">
+	<div class="row">
+  <div class="column" style="background-color: powderblue;">
+<ul>
+  <li><a class="active" href="wel.html">Home</a></li>
+  <li><a href="steps.html">How to use</a></li>
+  <li><a href="createbill.html">Create bill</a></li>
+  <li><a href="viewbill.html">View all bills</a></li>
+  <li><a href="custom.html">Custom check</a></li>
+  <li><a href="editbill.html">Edit bill</a></li>
+  <li><a href="prodstat.html">Product Statistics</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+ </div>
+ <h2 style="font-family:Malgun Gothic"><b><u>You can check out your bills here with multiple options.</h2></u></b><br><br><br>
+ <div class="column" style="background-color: powderblue;">
+		<div class="box">
+	<form action="readname.php" method="post">
+		First Name:<input type='text'  name='fname' placeholder="Name"	style='width:184px; height: 20px;'>
+		<input type="submit" name ="name_bill" value="Get Bill"><br><br>
+	</form>
+	<form action="readdate.php" method="post">
+		Date:<input type='text'  name='date' placeholder="Date" style='width:225px; height: 20px;'>	
+		<input type="submit" name="name_bill1" value="Get Bill"><br><br>
+		</form>
+		<form action="readnumber.php" method="post">
+		Mob Number:<input type='text'  name='number' placeholder="Mob Number" style='width:170px; height: 20px;'>
+		<input type="submit" name="name_bill" value="Get Bill"><br><br>
+		</form>
+		<form action="readpayment.php" method="post">
+		Bill more than rupees:<input type='text'  name='totalpayment' placeholder="Bill more than rupees" style='width:120px; height: 20px;'>
+		
+		<input type="submit" name="name_bill" value="Get Bill">
+	</div>
+</div>
+	</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="log"><img src="Log.jpeg" align="right" width="130" height="130" ></div>
+
+</body>
+</html>

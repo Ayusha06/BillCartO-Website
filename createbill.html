@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+.col {
+  font-family:Comic Sans MS;
+}
+
+.solid {
+  border-style: solid;
+  width: 430px;
+  height: 450px;
+}
+</style>
+</head>
+<body bgcolor="powderblue">
+
+  <div class="row">
+  <div class="column" style="background-color: powderblue;">
+<ul>
+  <li><a class="active" href="wel.html">Home</a></li>
+  <li><a href="steps.html">How to use</a></li>
+  <li><a href="createbill.html">Create bill</a></li>
+  <li><a href="viewbill.html">View all bills</a></li>
+  <li><a href="custom.html">Custom check</a></li>
+  <li><a href="editbill.html">Edit bill</a></li>
+  <li><a href="prodstat.html">Product Statistics</a></li>
+  <li><a href="about.html">About</a></li>
+</ul><br><br><br><br><br><br><br><br><br><br>
+ </div>
+      <h2 style="font-family:Comic Sans MS"><b>Welcome User!</h2></b>
+      <h2 style="font-family:Comic Sans MS"><b>Create a new bill from BillCartO</h2></b>
+      <h3 style="font-family:Comic Sans MS"><b>The most advanced billing Interface</h3></b><br>
+ <div class="column" style="background-color: powderblue;">
+  <div class="boxe">
+  <form action="bill.php" method="post">
+	<p class="solid">
+		<label for="birthday">Date:</label>
+  			<input type="date" id="date" name="date" style='width:150px; height: 20px;'><br>
+  	   <div class="col">
+       First Name: <input type="text" name="fname" placeholder="First Name" style='width:160px; height: 20px; font-family:Malgun Gothic;'>
+  	   Last Name : <input type="text" name="lname" placeholder="Last Name" style='width:190px; height: 20px; font-family:Malgun Gothic;'><br><br>
+  	   Entity1 : <input type="text" name="entity1" placeholder="Entity1" style='width:180px; height: 20px; font-family:Malgun Gothic;'>
+  	   Entity2 : <input type="text" name="entity2" placeholder="Entity2" style='width:210px; height: 20px; font-family:Malgun Gothic;'><br><br>
+  	   Entity3 : <input type="text" name="entity3" placeholder="Entity3" style='width:180px; height: 20px; font-family:Malgun Gothic;'>		
+  	   Entity4 : <input type="text" name="entity4" placeholder="Entity4" style='width:210px; height: 20px; font-family:Malgun Gothic;'><br><br>
+  	   Total Entity : <input type="text" name="totalentity" placeholder="Total Entity" style='width:150px; height: 20px; font-family:Malgun Gothic;'>		
+  	   Total Payment : <input type="text" name="totalpayment" placeholder="Total Payment" style='width:163px; height: 20px; font-family:Malgun Gothic;'><br><br>		
+  	   
+  	   <label for="payment status">Choose the Payment Status:</label>
+  <select name="ps" id="status" style='width:70px; height: 20px; font-family:Malgun Gothic;'>
+    <option value="paid">Paid</option>
+    <option value="unpaid">Unpaid</option><br>
+    
+  </select><br><br>
+  		Paid Amount : <input type="text" name="paidamt" placeholder="Paid Amount"style='width:145px; height: 20px; font-family:Malgun Gothic;'>	
+      Amount to be paid : <input type="text" name="amtpaid" placeholder="Amt to be paid" style='width:135px; height: 20px; font-family:Malgun Gothic;'><br><br>
+  		Mob Number : <input type="text" name="number" placeholder="Number" style='width:142px; height: 20px; font-family:Malgun Gothic;'>
+  	   	Address : <input type="text" name="address" placeholder="Address" style='width:203px; height: 20px; font-family:Malgun Gothic;'><br><br>
+  	   	Email : <input type="text" name="email" placeholder="Email" style='width:190px; height: 20px; font-family:Malgun Gothic;'><br><br>		
+  	   		
+  	   	
+  	   		
+  	   	
+  	   
+  			<input type="submit" style='font-family:Malgun Gothic;'>
+
+</div>
+</div>
+</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>    
+    <div id="log"><img src="Log.jpeg" align="right" width="130" height="130" ></div>
+ </body>
+</html>
